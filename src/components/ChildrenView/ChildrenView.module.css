@@ -1,0 +1,25 @@
+.childrenContainer {
+  margin-top: 20px;
+}
+
+.selectedParent {
+  margin-bottom: 10px;
+}
+
+
+.childList {
+  list-style: none;
+  padding: 0;
+}
+
+.childItem {
+  margin-bottom: 8px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.childItem:hover {
+  background-color: #f0f0f0;
+}

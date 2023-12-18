@@ -1,0 +1,26 @@
+.loginContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loginForm {
+  text-align: center;
+}
+
+.loginButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 0;
+  border: 2px solid black;
+  background-color: black;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.loginButton:hover {
+  background-color: #fff;
+  color: black;
+}
