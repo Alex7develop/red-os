@@ -1,8 +1,6 @@
-import { configureStore } from '@reduxjs/toolkit';
+import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
 import authReducer from '../features/authSlice';
 import dataReducer from '../features/dataSlice';
-
-export type RootState = ReturnType<typeof store.getState>;
 
 export const store = configureStore({
   reducer: {
@@ -10,3 +8,7 @@ export const store = configureStore({
     data: dataReducer,
   },
 });
+
+export type RootState = ReturnType<typeof store.getState>;
+export type AppDispatch = typeof store.dispatch;
+export type AppThunk<ReturnType = void> = ThunkAction<ReturnType, RootState, unknown, Action<string>>;

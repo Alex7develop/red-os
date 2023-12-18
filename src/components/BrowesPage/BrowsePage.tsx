@@ -7,9 +7,10 @@ import TreeView from '../TreeView/TreeView';
 import ChildrenView from '../ChildrenView/ChildrenView';
 import { Node } from '../../types/Node';
 import styles from './BrowsePage.module.css';
+import { AppDispatch } from '../../store/store';
 
 const BrowsePage: React.FC = () => {
-  const dispatch = useDispatch();
+  const dispatch = useDispatch<AppDispatch>();
   const isAuthenticated: boolean = useSelector(selectIsAuthenticated);
   const data: Node[] = useSelector(selectData);
   const navigate = useNavigate();
